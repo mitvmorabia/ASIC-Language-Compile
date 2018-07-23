@@ -1,0 +1,22 @@
+module adder ( a b c clock / sum cout )
+a.1, b.4, c.1, clock.1, sum.4, cout.1   
+// port definitions
+call subtractor(a,b,c)
+rising edge b
+a[2:1]= c[1:0] + b
+sum=b+a
+cout= a[1:0]*b[1:0]
+end
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
